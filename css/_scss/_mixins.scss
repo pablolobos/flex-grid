@@ -3,6 +3,14 @@
 	@return $remSize * 1rem;
 }
 
+/// Rem size
+
+/*
+  .component {
+    font-size: rem-calc(20); // = 1.25rem
+  }
+*/
+
 @mixin font-size($size) {
 	font-size: $size;
 	font-size: calculateRem($size);
@@ -14,6 +22,20 @@
 /// @param {number} $triangle-size - Width of the triangle.
 /// @param {color} $triangle-color - Color of the triangle.
 /// @param {keyword} $triangle-direction - Direction the triangle points. Can be `top`, `right`, `bottom`, or `left`.
+
+/*
+.component {
+  &::after {
+    @include css-triangle(
+    $triangle-size: 10px, // Size of the triangle
+    $triangle-color: red, // Color of the triangle
+    $triangle-direction: top // Orientation of the triangle; can be top, right, bottom, or left
+    );
+  }
+}
+*/
+
+
 @mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
   content: "";
   display: block;

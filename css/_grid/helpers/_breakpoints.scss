@@ -1,3 +1,60 @@
+/*
+  Breakpoints
+  -----------------------------------------------------------------
+  -----------------------------------------------------------------
+  
+  **** Basic usage
+  
+  @include breakpoint(large) {
+    background: #cc4;
+  }
+
+  **** Define new breakpoints
+  $breakpoints: (
+    small: rem-calc(0),
+    medium: rem-calc(640),
+    large: rem-calc(1200),
+    xlarge: rem-calc(1440),
+    xxlarge: rem-calc(1920),
+  );
+
+  **** Custom breakpoint
+  .element {
+    // Converted to 20em
+    @include breakpoint(320px) { }
+
+    // Unitless values are assumed to be pixels
+    @include breakpoint(320) { }
+
+    // Converted to 40em
+    @include breakpoint(40rem) { }
+  }
+
+
+  **** Adding new breakpoints
+  Add the name to the classes and define the break.
+  
+  $breakpoint-classes: (small medium large xlarge);
+
+  $breakpoints: (
+    small: rem-calc(0),
+    medium: rem-calc(640),
+    large: rem-calc(1200),
+    xlarge: rem-calc(1440),
+    xxlarge: rem-calc(1920),
+  );
+
+  ****Orientation breakpoints
+  Portrait or landscape
+
+  .element {
+    @include breakpoint(landscape) {
+      // CSS for landscape-oriented devices only
+    }
+  }
+*/
+
+
 // Foundation for Apps
 //
 // BREAKPOINTS

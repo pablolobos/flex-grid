@@ -1,5 +1,96 @@
 
 /*
+  GRID
+  -----------------------------------------------------------------
+  -----------------------------------------------------------------
+  
+  **** Basic grid elements
+  
+  .grid-frame       > basic grid container
+  .grid-block       > grid element, block container
+  .grid-content     > content container
+
+
+  GRID MODIFIERS
+  -----------------------------------------------------------------
+  -----------------------------------------------------------------
+
+  ***** ORIENTATION
+
+  vertical          > vertical childs
+  horizontal        > default, horizontal childs
+  medium-vertical   > example breakpoint orientation change
+
+  ** Wrapping
+  wrap              > force blocks to wrap, not fit in one line
+
+  ***** BLOCK ALIGNMENT
+
+  align-left        > default
+  align-right       > align block to the right
+  align-center      > align blocks to the center
+  align-justify     > align blocks so space between is the same
+  align-spaced      > align blocks so space around is the same
+
+  ***** SOURCE ORDERING
+
+  Change default html order
+
+  order-1           > smaller number is first
+  order-2           > ...
+
+  ***** Offsets 
+
+  small-offset-2    > offset blocks, size-offset-by
+
+
+  MANUAL SIZING
+  -----------------------------------------------------------------
+  -----------------------------------------------------------------
+
+  small-4
+  medium-4
+  large-4
+  ...
+
+  PARENT LEVEL SIZING
+  -----------------------------------------------------------------
+  -----------------------------------------------------------------
+
+  small-up-3
+  medium-up-3
+  large-up-3
+  ...
+
+  
+  BUILDING WITH MIXINS
+  -----------------------------------------------------------------
+  -----------------------------------------------------------------
+  
+  Use one class to buld the grid
+
+  .sidebar {
+    // Panel on small screens
+    @extend %panel-base;
+    @include panel-position(left);
+    
+    // Override styles to become a block on medium screens
+    @include breakpoint(medium) {
+    @include grid-panel-reset;
+    @include grid-block(4);
+    }
+
+    // Change size to 3 columns on large screens
+    @include breakpoint(large) {
+    @include grid-size(3);
+    }
+  }
+
+
+*/
+
+
+/*
   THE GRID
   --------
 

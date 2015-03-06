@@ -1,4 +1,3 @@
-// Make sure the charset is set appropriately
 @charset "UTF-8";
 
 @import "compass/css3";
@@ -7,9 +6,21 @@
 @import "_scss/_mixins";
 @import "_grid/_foundation";
 
+/*****************************************************************************
+Basic styles
+*****************************************************************************/
+
+body{
+	background: #fff;
+}
+
+/*****************************************************************************
+Grid mods
+*****************************************************************************/
 
 .grid-block{
-	background: darken(#fff, 20%);
+	background: transparentize(#9BE3FF, 0.6);
+	margin: $block-margin;
 }
 
 
