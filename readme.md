@@ -1,4 +1,4 @@
-#Basic Flex Gird for Apps
+#Basic Flex Grid for Apps
 
 Basic template for a web app interface
 
