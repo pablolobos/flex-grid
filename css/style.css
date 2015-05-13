@@ -181,7 +181,7 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
   -----------------------------------------------------------------
   -----------------------------------------------------------------
   
-  Use one class to buld the grid
+  Use one class to build the grid
 
   .sidebar {
     // Panel on small screens
@@ -1446,6 +1446,9 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
       flex: 0 0 8.33333%; } }
 .grid-content .modal .grid-block {
   flex-wrap: nowrap; }
+
+.grid--no-margin .grid-block {
+  margin: 0; }
 
 /* ==========================================================================
    Base styles: opinionated defaults

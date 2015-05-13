@@ -67,7 +67,7 @@
   -----------------------------------------------------------------
   -----------------------------------------------------------------
   
-  Use one class to buld the grid
+  Use one class to build the grid
 
   .sidebar {
     // Panel on small screens
@@ -531,5 +531,11 @@ $block-grid-max-size: 6 !default;
 
   .grid-content .modal .grid-block {
     flex-wrap: nowrap;
+  }
+}
+
+.grid--no-margin{
+  .grid-block{
+    margin: 0;
   }
 }
