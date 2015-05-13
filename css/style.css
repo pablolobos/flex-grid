@@ -157,6 +157,9 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
 
   small-offset-2    > offset blocks, size-offset-by
 
+  ***** Margins
+  grid--no-margin   > Add to grid-frame to remove margins between grid-blocks
+
 
   MANUAL SIZING
   -----------------------------------------------------------------
